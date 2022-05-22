@@ -41,7 +41,16 @@ class Pilha {
     }
 
     toString() {
+        sb = new StringBuilder("[");
 
+        for (i = 0; i <= this.topo; i++) {
+            sb.append(this.dados[i]);
+            if (i < this.topo) sb.append(", ");
+        }
+
+         sb.append("]");
+
+        return sb.toString();
     }
 }
 
